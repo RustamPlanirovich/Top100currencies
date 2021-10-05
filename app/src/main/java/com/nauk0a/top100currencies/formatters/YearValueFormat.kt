@@ -2,12 +2,13 @@ package com.nauk0a.top100currencies.formatters
 
 import com.github.mikephil.charting.components.AxisBase
 import com.github.mikephil.charting.formatter.IAxisValueFormatter
+import com.github.mikephil.charting.formatter.ValueFormatter
 import com.nauk0a.top100currencies.dateToString
 import java.util.*
 
 
 
-class YearValueFormatter : IAxisValueFormatter {
+class YearValueFormatter : ValueFormatter() {
 
 
 
