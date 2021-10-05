@@ -1,4 +1,4 @@
-package com.nauk0a.top100currencies.contract
+package com.nauk0a.top100currencies.mvp.presenter.contract
 
 import com.nauk0a.top100currencies.adapter.CurrenciesAdapter
 
@@ -12,7 +12,7 @@ class CurrenciesContract {
         fun refresh()
     }
 
-    abstract class Presenter : BaseContract.Presenter<View>() {
+    abstract class Presenter: BaseContract.Presenter<View>() {
         abstract fun makeList()
         abstract fun refreshList()
     }

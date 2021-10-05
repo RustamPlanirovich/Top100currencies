@@ -1,11 +1,11 @@
-package com.nauk0a.top100currencies
+package com.nauk0a.top100currencies.activites
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import com.nauk0a.top100currencies.activites.AboutActivity
+import com.nauk0a.top100currencies.R
 import com.nauk0a.top100currencies.fragments.CurrenciesListFragment
 
 class MainActivity : AppCompatActivity() {

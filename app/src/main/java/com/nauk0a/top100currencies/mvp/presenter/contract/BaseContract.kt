@@ -1,4 +1,4 @@
-package com.nauk0a.top100currencies.contract
+package com.nauk0a.top100currencies.mvp.presenter.contract
 
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
@@ -7,9 +7,10 @@ class BaseContract {
 
     interface View
 
-    abstract class Presenter<V : View> {
+    abstract class Presenter<V: View> {
         private val subscriptions = CompositeDisposable()
         protected lateinit var view: V
+
 
         fun subscribe(subscription: Disposable) {
             subscriptions.add(subscription)
@@ -26,5 +27,6 @@ class BaseContract {
         fun detach() {
             unsubscribe()
         }
+
     }
 }

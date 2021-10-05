@@ -1,8 +1,15 @@
-package com.nauk0a.top100currencies
+package com.nauk0a.top100currencies.formatters
 
+import com.github.mikephil.charting.components.AxisBase
+import com.github.mikephil.charting.formatter.IAxisValueFormatter
+import com.nauk0a.top100currencies.dateToString
 import java.util.*
 
-class YearValueFormat : AxisValueFormatter {
+
+
+class YearValueFormatter : IAxisValueFormatter {
+
+
 
     override fun getFormattedValue(value: Float, axis: AxisBase?): String {
         val calendar = Calendar.getInstance()
